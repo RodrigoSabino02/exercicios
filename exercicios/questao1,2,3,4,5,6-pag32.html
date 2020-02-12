@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- questao 1-->
+    <h3>Álcool ou Gasolina?</h3>
+    <script>
+        //questao 2
+        var tanque = 40
+        var caminho = 480
+        var consumoDeGasolina = caminho / tanque
+        document.write("o consumo de gasolina e " + consumoDeGasolina + " por km" + "<br>")
+
+        //questao 3
+        var tanque = 40
+        var caminho2 = 300
+        var consumoDeAlcool = caminho2 / tanque
+        document.write("o consumo de alcool e " + consumoDeAlcool.toFixed(2) + " por km" + "<br>") // questao 4,5
+
+        //questao 6
+        var preçoDaGasolina = 2.90
+        var preçoDoalcool = 2.40
+        var precoPorKilometroGasolina = consumoDeGasolina / preçoDaGasolina
+        var precoPorKilometroAlcool = consumoDeAlcool / preçoDoalcool  
+        document.write("preço da gasolina por km e : " + precoPorKilometroGasolina.toFixed(2) + "<br>")
+        document.write("preço da alcool por km e : " + precoPorKilometroAlcool.toFixed(2) + "<br>")
+    </script>
+</body>
+</html>
