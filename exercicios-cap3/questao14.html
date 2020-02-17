@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nascimento = parseInt(prompt("qual e o ano do seu nascimento:"))
+        var atual = parseInt(prompt("qual e o ano atual:"))
+
+        var idadeAnos = atual - nascimento //  a
+        var idadeMeses = idadeAnos * 12 //  b
+        var idadeDias = idadeAnos * 365 //  c
+        var idadeSemanas = idadeAnos * 52.143 // d
+
+        document.write("idade em anos: " + idadeAnos + "<br>")
+        document.write("idade em meses: " + idadeMeses + "<br>")
+        document.write("idade em dias: " + idadeDias + "<br>")
+        document.write("idade em semanas: " + idadeSemanas.toFixed(2))
+    </script>
+</body>
+</html>

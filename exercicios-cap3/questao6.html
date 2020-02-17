@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fixo = parseFloat(prompt("qual e o salario fixo? "))
+        var vendas = parseFloat(prompt("quantas vendas no mes? "))
+        var valor = parseFloat(prompt("quanto de vendas no mes? "))
+        var comissao = (vendas * valor) / 100
+        var final = (comissao + fixo)
+
+        document.write("o salario final e de: " + final + "<br> a comissao foi de " + comissao)
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salario = parseFloat(prompt("qual e o seu salario?"))
+        var conta = parseFloat(prompt("qual valor da divida"))
+        var conta1 = parseFloat(prompt("qual valor da divida"))
+
+        var juros = (conta * 2) / 100
+        var juros1 = (conta1 * 2) / 100
+        var contaNova = conta + juros
+        var contaNova1 = conta1 + juros1
+        var divida = contaNova + contaNova1
+        var restante = salario - divida
+
+        document.write("vai sobrar do salario " + restante)
+
+    </script>
+</body>
+</html>

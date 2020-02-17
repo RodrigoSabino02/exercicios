@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var hora = parseInt(prompt("qual e a hora"))
+        var minuto = parseInt(prompt("qual e os minutos"))
+
+        var convertMin = hora * 60 // item a
+        var totalMin = minuto + convertMin // item b
+        var totalSeg = totalMin * 60 // item c
+
+        document.write("as horas em minutos e igual a " + convertMin + "<br>")
+        document.write("o total de minutos e " + totalMin + "<br>")
+        document.write("o total de segundos e " + totalSeg)
+    </script>
+</body>
+</html>
