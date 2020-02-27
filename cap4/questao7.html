@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salario = parseFloat(prompt("qual seu salario?"))
+
+        if(salario < 500) {
+            var novoSalario = ((salario * 30 ) / 100) + salario
+            document.write("seu novo salario e " + novoSalario)
+        } else{
+            document.write("o seu salario n recebeu reajuste")
+        }
+    </script>
+</body>
+</html>

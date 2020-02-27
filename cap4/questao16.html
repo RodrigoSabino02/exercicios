@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var preço = parseFloat(prompt("qual e o preço do produto?"))
+    var desconto = ""
+    var novoPreço = ""
+    if(preço < 30) {
+        desconto = 0
+        novoPreço = preço - desconto
+    } else if(preço >= 30 && preço < 100) {
+        desconto = ((preço * 10 ) / 100)
+        novoPreço = preço - desconto  
+    } else{
+        desconto = ((preço * 15 ) / 100)
+        novoPreço = preço - desconto
+    } 
+
+    document.write("o valor de desconto foi de: " + desconto + "<br>")
+    document.write("o novo preço e: " + novoPreço)
+
+    </script>
+</body>
+</html>

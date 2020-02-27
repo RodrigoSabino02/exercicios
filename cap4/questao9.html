@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var saldoMedio = parseFloat(prompt("qual e o seu saldo medio?"))
+        var status = ""
+
+        if(saldoMedio < 200) {
+            status = ((saldoMedio * 10 ) / 100)
+
+        } else if(saldoMedio >= 200 && saldoMedio < 300) {
+            status = ((saldoMedio * 20 ) / 100)
+
+        } else if(saldoMedio >= 300 && saldoMedio < 400) {
+            status = ((saldoMedio * 25 ) / 100)
+
+        } else {
+            status = ((saldoMedio * 30 ) / 100)
+
+        }
+
+        document.write("o seu saldo medio e: " + saldoMedio +"<br>" + "e o credito disponivel e: " + status)
+
+    </script>
+</body>
+</html>

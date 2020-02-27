@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var idade = parseInt(prompt("qual a sua idade"))
+        var categoria = ""
+
+        if(idade > 5 && idade <= 7) {
+            categoria = "infantil"
+            document.write("a sua categoria e " + categoria)
+        } else if(idade > 8 && idade <= 10) {
+            categoria = "juvenil"
+            document.write("a sua categoria e " + categoria)
+        } else if(idade > 11 && idade <= 15) {
+            categoria = "adolescente"
+            document.write("a sua categoria e " + categoria)
+        } else if(idade > 16 && idade <= 30) {
+            categoria = "adulto"
+            document.write("a sua categoria e " + categoria)
+        } else if(idade > 30) {
+            categoria = "senior"
+            document.write("a sua categoria e " + categoria)
+        } else {
+            document.write("ainda n existe uma categoria para o voce <br>")
+        }
+
+    </script>
+</body>
+</html>

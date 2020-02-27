@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var altura = parseFloat(prompt("qual e a sua altura"))
+        var sexo = prompt("qual e o seu sexo(M ou F)")
+
+        if(sexo == M){
+            var pesoIdeal = (72.7 * altura) - 58
+        } else {
+            var pesoIdeal = (62.1 * altura) - 44.7
+        }
+
+        document.write("o peso ideal e " + pesoIdeal)
+    </script>
+</body>
+</html>

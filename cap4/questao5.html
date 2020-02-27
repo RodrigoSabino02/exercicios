@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = parseFloat(prompt("digite outro numero"))
+        var n2 = parseFloat(prompt("digite outro numero"))
+
+        var escolha = parseInt(prompt("escolha sua açao? (1, 2, 3, 4)"))
+
+        if(escolha == 1) {
+            document.write((n1 + n2) / 2)
+        } else if(escolha == 2 && n1 > n2) {
+            document.write(n1 - n2)
+        } else if(escolha == 2 && n2 > n1) {
+            document.write(n2 - n1)
+        } else if(escolha == 3) {
+            document.write(n1 * n2)
+        } else if(escolha == 4 && n2 != 0) {
+            document.write(n1 / n2)
+        } else {
+            document.write("ERRO essa operaçao n existe escolha entre (1,2,3,4)" + "<br>" + (n1 / n2))
+        }
+    </script>
+</body>
+</html>

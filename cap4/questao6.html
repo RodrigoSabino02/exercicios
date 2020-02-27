@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = parseFloat(prompt("digite um numero"))
+        var n2 = parseFloat(prompt("digite um numero"))
+
+        var operaçao = parseInt(prompt("digite o numero da sua operaçao (1, 2, 3)"))
+
+        if(operaçao == 1) {
+            document.write(Math.pow(n1, n2))
+        } else if(operaçao == 2) {
+            document.write(Math.sqrt(n1))
+            document.write(Math.sqrt(n2))
+        } else if(operaçao == 3) {
+            document.write(Math.cbrt(n1))
+            document.write(Math.cbrt(n2))
+        } else {
+            document.write("ERRO")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salario = parseFloat(prompt("qual e o seu salario"))
+        var imposto = (salario * 7) / 100
+
+        var status = ""
+        if(salario < 350){
+            status = salario - imposto + 100
+        } else if(salario >= 350 && salario < 600) {
+            status = salario - imposto + 75
+        } else if(salario >= 600 && salario < 900) {
+            status = salario - imposto + 50
+        } else {
+            status = salario - imposto + 35
+        }
+
+        document.write("o valor a se receber e de: " + status)
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var salario = parseFloat(prompt("qual seu salario?"))
+    var aumento = ""
+    var novoSalario = ""
+    if(salario < 300) {
+        aumento = ((salario * 15 ) / 100)
+        novoSalario = salario + aumento
+    } else if(salario >= 300 && salario < 600) {
+        aumento = ((salario * 10 ) / 100)
+        novoSalario = salario + aumento 
+    } else if(salario >= 600 && salario < 900) {
+        aumento = ((salario * 5 ) / 100)
+        novoSalario = salario + aumento 
+    } else{
+        aumento = 0
+        novoSalario = salario + aumento
+    } 
+
+    document.write("aumento recebido foi de: " + aumento + "<br>")
+    document.write("o novo salario e: " + novoSalario)
+
+    </script>
+</body>
+</html>

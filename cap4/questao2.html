@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nota1 = parseFloat(prompt("qual foi a sua primeira nota"))
+        var nota2 = parseFloat(prompt("qual foi a sua segunda nota"))
+
+        var media = (nota1 + nota2) / 2
+        var status = ""
+
+        if(media >= 7 && media <= 10) {
+            status = "voce foi aprovado, parabens"
+        } else if(media < 7 && media >= 4) {
+            status = "voce vai para o exame"
+        } else {
+            status = "infelizmente vc foi reprovado"
+        }
+
+        document.write("sua media: " + media + "<br>" + "status: " + status)
+    </script>
+</body>
+</html>

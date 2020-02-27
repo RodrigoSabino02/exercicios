@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var produto = parseFloat(prompt("qual preço do produto"))
+        var novoPreço = ""
+        var classificaçao = ""
+
+        if(produto < 50){
+            novoPreço = ((produto * 5) / 100) + produto 
+        } else if(produto >= 50 && produto < 100) {
+            novoPreço = ((produto * 10) / 100) + produto
+        } else {
+            novoPreço = ((produto * 15) / 100) + produto
+        }
+
+        if(novoPreço < 80) {
+            classificaçao = "barato"
+        } else if(novoPreço >= 80 && novoPreço < 120) {
+            classificaçao = "normal"
+        } else if(novoPreço >= 120 && novoPreço < 200) {
+            classificaçao = "caro"
+        } else {
+            classificaçao = "muito caro"
+        }
+
+        document.write("novo preço do produto: " + novoPreço + "<br>")
+        document.write("a sua classificaçao e: " + classificaçao)
+
+    </script>
+</body>
+</html>

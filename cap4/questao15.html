@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var operaçao = parseInt(prompt("qual tipo de investimento(1, 2)"))
+        var valor = parseFloat(prompt("qual valor a ser investido"))
+        var valorCorrigido = ""
+        if(operaçao == 1){
+            valorCorrigido = ((valor * 3) / 100) + valor
+        } else if(operaçao == 2){
+            valorCorrigido = ((valor * 4) / 100) + valor
+        } else {
+            valorCorrigido = "erro,escolha entre a operaçao 1 e 2"
+        }
+
+        document.write("o valor corrigido do seu investimento e:" + valorCorrigido)
+    </script>
+</body>
+</html>
